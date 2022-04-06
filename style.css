@@ -78,9 +78,82 @@ ul {
 li {
     display: inline-block;
     margin-left: 40px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 25px;
+    border-radius: 15px;
+    height: 150px;
+    background-repeat: no-repeat !important;
+    background-position: right 10px top !important;
+
 }
 
 
+#work {
+    background: var(--light-red-work);
+    background-image: url("./images/icon-work.svg");
+}
+
+#play {
+    background: var(--soft-blue-play);
+    background-image: url("./images/icon-play.svg");
+}
+
+#study {
+    background: var(--light-red-study);
+    background-image: url("./images/icon-study.svg");
+}
+#exercise {
+    background-color: var(--lime-green-exercise);
+    background-image: url("./images/icon-exercise.svg");
+}
+
+#social {
+    background: var(--violet-social);
+    background-image: url("./images/icon-social.svg");
+}
+
+#selfcare {
+    background: var(--soft-orange-selfcare);
+    background-image: url("./images/icon-self-care.svg");
+}
+
+.contenttext {
+    box-sizing: border-box;
+  background-color: var(--dark-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px 0 10px 0;
+  border-radius: 20px;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px 25px 20px 25px;
+    background: var(--dark-blue);
+    border-radius: 15px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+.contenttext:hover {
+background-color: var(--blue);
+}
+.contenttext p {
+    font-size: 12px;
+}
+.contenttext h5 {
+    margin-top: 10px;
+}
+.contenttext h3 {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.weekly, .lastweek, .monthly, .lastmonth {
+    display: none;
+}
 
 .attribution {
     font-size: 14px;
