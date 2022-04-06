@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,65 +17,111 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  <div class="container">
+    <div class="navigation">
+      <div class="navA">
+          <img class="jeremy" src="./images/image-jeremy.png" alt="Jeremy's picture">
+        <div class="navtext">
+          <p class="navbody">Report for</p>
+         <h1> Jeremy Robson</h1>  
+        </div>
+      </div>
+        <ul>
+          <li class="dailybtn">Daily</li>
+          <li class="weeklybtn">Weekly</li>
+          <li class="monthlybtn">Monthly</li>
+        </ul>
+      
+    </div>
+ 
+   <div class="table">
+     <div class="content" id="work">
+       <img src="./images/icon-work.svg" alt="">
+       <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+       <div class="contenttext">
+         <h5>Work</h5>
+         <h3 class="daily">5hrs <!-- daily --></h3>
+            <p class="yesterday">Yesterday - 7hrs <!-- daily --></p>
+        <h3 class="weekly">32hrs <!-- weekly --> </h3>
+            <p class="lastweek">Last Week - 36hrs <!-- weekly --></p>
+         <h3 class="monthly">103hrs <!-- monthly --></h3>
+         <p class="lastmonth">Last Month - 128hrs <!-- monthly --> </p>
+       </div>
+     </div>
+    <div class="content" id="play">
+      <img src="./images/icon-play.svg" alt="">
+      <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+      <div class="contenttext">       
+        <h5>Play</h5>
+        <h3 class="daily">1hr <!-- daily --></h3>
+          <p class="yesterday">Yesterday - 2hrs <!-- daily --></p>
+        <h3 class="weekly">10hrs <!-- weekly --></h3>
+          <p class="lastweek">Last Week - 8hrs <!-- weekly --></p>
+        <h3 class="monthly">23hrs <!-- monthly --></h3>
+          <p class="lastmonth">Last Month - 29hrs <!-- monthly --></p>
+      </div>
+     </div>
+    <div class="content" id="study">
+      <img src="./images/icon-study.svg" alt="">
+      <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+      <div class="contenttext">       
+        <h5>Study</h5>
+           <h3 class="daily">0hrs <!-- daily --></h3>
+          <p class="yesterday">Yesterday - 1hr <!-- daiLast Monthly --></p>
+        <h3 class="weekly">4hrs <!-- weekly --></h3>
+          <p class="lastweek">Last Week - 7hrs <!-- weekly --></p>
+        <h3 class="monthly">13hrs <!-- monthly --></h3>
+          <p class="lastmonth">Last Month - 19hrs <!-- monthly --></p>
+      </div>
+    </div>
+    <div class="content" id="exercise">
+      <img src="./images/icon-exercise.svg" alt="">
+      <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+      <div class="contenttext">      
+        <h5>Exercise</h5>
+     <h3 class="daily">1hr <!-- daily --></h3>
+          <p class="yesterday">Yesterday - 1hr <!-- daily --></p>
+        <h3 class="weekly">4hrs <!-- weekly --></h3>
+          <p class="lastweek">Last Week - 5hrs <!-- weekly --></p>
+        <h3 class="monthly">11hrs <!-- monthly --></h3>
+          <p class="lastmonth">Last Month - 18hrs <!-- monthly --></p>
+      </div>
+    </div>
+    <div class="content" id="social">
+      <img src="./images/icon-social.svg" alt="">
+      <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+      <div class="contenttext">     
+        <h5>Social</h5>
+         <h3 class="daily">1hr <!-- daily --></h3>
+          <p class="yesterday">Yesterday - 3hrs <!-- daily --></p>
+        <h3 class="weekly">5hrs <!-- weekly --></h3>
+          <p class="lastweek">Last Week - 10hrs <!-- weekly --></p>
+        <h3 class="monthly">21hrs <!-- monthly --></h3>
+          <p class="lastmonth">Last Month - 23hrs <!-- monthly --></p>
+      </div>
+    </div>
+    <div class="content" id="selfcare">
+      <img src="./images/icon-self-care.svg" alt="">
+      <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="">
+      <div class="contenttext">       
+        <h5>Self Care</h5>
+     <h3 class="daily">0hrs <!-- daily --></h3>
+          <p class="yesterday">Yesterday - 1hr <!-- daily --></p>
+        <h3 class="weekly">2hrs <!-- weekly --></h3>
+          <p class="lastweek">Last Week - 2hrs <!-- weekly --></p>
+        <h3 class="monthly">7hrs <!-- monthly --></h3>
+          <p class="lastmonth">Last Month - 11hrs <!-- monthly --></p>
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+   </div> 
+  
   </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">paumnc</a>.
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

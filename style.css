@@ -1,0 +1,87 @@
+:root {
+--light-red-work: hsl(15, 100%, 70%);
+--soft-blue-play: hsl(195, 74%, 62%);
+--light-red-study: hsl(348, 100%, 68%);
+--lime-green-exercise: hsl(145, 58%, 55%);
+--violet-social: hsl(264, 64%, 52%);
+--soft-orange-selfcare: hsl(43, 84%, 65%);
+--very-dark-blue: hsl(226, 43%, 10%);
+--dark-blue: hsl(235, 46%, 20%);
+--desaturated-blue: hsl(235, 45%, 61%);
+--pale-blue: hsl(236, 100%, 87%);
+--blue: hsl(246, 80%, 60%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background: var(--very-dark-blue);
+color:#fff;
+font-family: 'Rubik', sans-serif;
+font-weight: 300;
+
+}
+.container {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.jeremy {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.navigation {
+    background: var(--dark-blue);
+    text-align: center;
+    border-radius: 15px;
+    height: 150px;
+}
+.navA {
+    background-color: var(--blue);
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+
+}
+.navtext {
+    text-align: left;
+    color: var(--pale-blue);
+    margin: 5px 0 0 10px;
+    line-height: 1.5;
+
+}
+h1 {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.navbody {
+    font-size: 12px;
+}
+
+ul {
+   list-style-type: none;  
+   margin-top: 20px;
+   font-size: 12px;
+   margin-left: -40px;
+}
+li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+
+.attribution {
+    font-size: 14px;
+}
