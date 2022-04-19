@@ -78,7 +78,6 @@ ul {
 li {
     display: inline-block;
     margin-left: 40px;
-    
     color: var(--desaturated-blue);
 }
 li:hover {
@@ -136,7 +135,7 @@ li:hover {
   color: white;
   box-sizing: border-box;
   padding: 10px 25px 20px 25px;
-    background: var(--dark-blue);
+  background: var(--dark-blue);
     border-radius: 15px;
     height: 100px;
     position: relative;
@@ -164,12 +163,98 @@ li:hover {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
 }
-.weekly, .lastweek, .monthly, .lastmonth, .daily, .yesterday {
-    display: none;
+
+@media only screen and (min-width: 900px) {
+.container{
+        max-width: 1100px; 
+        width: 100%;
+        height: 500px;
+        display: flex;
+        position: absolute;
+        flex-wrap:  nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -40px;
+        
 }
 
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 1000px;
+}
+.content {
+     margin: 0 20px 0 0;
+     border-radius: 15px;
+     height: 150px;
+}
+
+.contenttext {
+height: 180px;
+width: 244px;
+top: 40px;
+ display: block;
+ grid-template-columns: none;
+ grid-template-rows: none;
+}
+ .ellipsis {
+     margin-left: 170px;
+     display: flex;
+     margin-top: -8px;
+ }
+ h5 {
+     width: 80px;
+ }
+.timeframes {
+    margin-top: 30px;
+    font-size: 50px !important;
+}
+.previoustimeframes {
+    margin-left: 0px !important;
+}
+.navigation {
+    height: 480px;
+    width: 280px;
+    margin-right: 20px;
+}
+.navA {
+    height: 350px;
+    display:list-item;
+    padding: -20px;
+}
+
+.jeremy {
+    width: 44%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 10px 0 30px -90px;
+}
+
+.navbody {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+li {
+display: block;
+text-align: left;
+font-size: 15px;
+line-height: 2;
+padding-left: 30px;
+
+}
+footer {
+  display: none;
+}
+
+}
 .attribution {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 20px;
-    
 }
